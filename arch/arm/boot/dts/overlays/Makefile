@@ -27,6 +27,7 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
 	enc28j60.dtbo \
 	enc28j60-spi2.dtbo \
 	exc3000.dtbo \
+	es9023-audio.dtbo \
 	fe-pi-audio.dtbo \
 	goodix.dtbo \
 	googlevoicehat-soundcard.dtbo \
@@ -59,6 +60,7 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
 	justboom-dac.dtbo \
 	justboom-digi.dtbo \
 	lirc-rpi.dtbo \
+	mamboberry-dacplus-es9023-audio.dtbo \
 	mbed-dac.dtbo \
 	mcp23017.dtbo \
 	mcp23s17.dtbo \
