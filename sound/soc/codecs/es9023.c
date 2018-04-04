@@ -31,6 +31,7 @@ static struct snd_soc_dai_driver es9023_dai = {
 		.channels_min = 2,
 		.channels_max = 2,
 		.rates        = SNDRV_PCM_RATE_8000_192000,
+		.rates        = SNDRV_PCM_RATE_CONTINUOUS,
 		.rate_max     = 384000,
 		.formats      = SNDRV_PCM_FMTBIT_S16_LE |
 				SNDRV_PCM_FMTBIT_S24_3LE |
