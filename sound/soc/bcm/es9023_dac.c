@@ -109,7 +109,7 @@ static int snd_rpi_es9023_dac_hw_params(struct snd_pcm_substream *substream,
 	unsigned int bclk_ratio = physical_bits * channels;
 
 	if (priv->bclk_ratio_int_div && channels == 2 &&
-	    sample_freq < 192000 && sample_freq % 8000 == 0) {
+	    sample_freq < 384000 && sample_freq % 8000 == 0) {
 		if (physical_bits == 16 || physical_bits == 24)
 			bclk_ratio = 50;
 		else if (physical_bits == 32)
