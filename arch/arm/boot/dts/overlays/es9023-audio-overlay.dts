@@ -52,13 +52,4 @@
 			};
 		};
 	};
-
-	__overrides__ {
-		384k = <&es9023_codec>,"es9023,384k?";
-		bclk_ratio_int_div =
-			<&es9023_dac>,"es9023-dac,bclk-ratio-int-div?";
-		card_name = <&es9023_dac>,"es9023-dac,card-name";
-		dai_name = <&es9023_dac>,"es9023-dac,dai-name";
-		dai_stream_name = <&es9023_dac>,"es9023-dac,dai-stream-name";
-	};
 };
