@@ -41,10 +41,7 @@ struct es9023_dac_variant {
 };
 
 #define COMPAT_GENERIC	"es9023-dac"
-#define COMPAT_ISABRE	"audiphonics,es9023-i-sabre-dac"
 #define COMPAT_MAMBO	"collybia,es9023-mamboberry-dacplus"
-#define COMPAT_AKK	"digitaldreamtime,es9023-akkordion-dac"
-#define COMPAT_HBLIGHT	"hifiberry,es9023-dacpluslight"
 
 static const struct es9023_dac_variant es9023_dac_variants[] = {
 	{	/* generic */
@@ -53,29 +50,11 @@ static const struct es9023_dac_variant es9023_dac_variants[] = {
 		.dai_name        = "ES9023 DAC",
 		.dai_stream_name = "ES9023 DAC HiFi",
 	},
-	{	/* AudioPhonics ISabre */
-		.compatible	 = COMPAT_ISABRE,
-		.card_name	 = "ISabre",
-		.dai_name	 = "ISabre DAC",
-		.dai_stream_name = "ISabre DAC HiFi",
-	},
 	{	/* MamboBerry DAC+ */
 		.compatible	 = COMPAT_MAMBO,
 		.card_name	 = "Mamboberry",
 		.dai_name	 = "Mamboberry DAC",
 		.dai_stream_name = "Mamboberry DAC HiFi",
-	},
-	{	/* Digital Dreamtime Akkordion */
-		.compatible	 = COMPAT_AKK,
-		.card_name	 = "Akkordion",
-		.dai_name	 = "Akkordion DAC",
-		.dai_stream_name = "Akkordion DAC HiFi",
-	},
-	{	/* HiFiBerry DAC+ Light */
-		.compatible	 = COMPAT_HBLIGHT,
-		.card_name	 = "snd_rpi_hifiberry_dac",
-		.dai_name	 = "HifiBerry DAC",
-		.dai_stream_name = "HifiBerry DAC HiFi",
 	},
 };
 
@@ -255,10 +234,7 @@ static const struct of_device_id snd_rpi_es9023_dac_of_match[] = {
 	/* generic */
 	{ .compatible = COMPAT_GENERIC, },
 	/* Manufacturer compatible definitions BELOW! */
-	{ .compatible = COMPAT_ISABRE, },
 	{ .compatible = COMPAT_MAMBO, },
-	{ .compatible = COMPAT_AKK, },
-	{ .compatible = COMPAT_HBLIGHT, },
 	{ /* sentinel */ },
 };
 MODULE_DEVICE_TABLE(of, snd_rpi_es9023_dac_of_match);
